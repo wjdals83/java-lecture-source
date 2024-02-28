@@ -44,6 +44,7 @@ public class MemberDTO {
 
     /* 필기. 설정자(setter) */
     public void setNumber(int number) { this.number = number;}
+
     public void setName(String name) { this.name = name;}
     public void setAge(int age) {this.age = age;}
     public void setGender(char gender) {this.gender = gender;}
@@ -53,6 +54,7 @@ public class MemberDTO {
 
     /* 필기. 접근자(getter) 메소드 */
     public int getNumber() {return number;}
+
     public String getName() {return name;}
     public int getAge() {return age;}
     public char getGender() {return gender;}

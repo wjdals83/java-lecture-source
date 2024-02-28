@@ -24,6 +24,7 @@ public class Application01 {
         *    프로그램과 외부 데이터가 연결된 길을 스트림(Stream) 이라고 한다.
         *    스트림은 단방향 이기 때문에 데이터를 읽어오기 위한 길을 입력 스트림
         *                            데이터를 출력하기 위한 길은 출력 스트림
+        *
         *   필기.
         *    그 중 InputStream 과 Reader 는 데이터를 읽어오는 입력 스트림 이고,
         *    OutputStream 과 Writer 는 데이터를 내보내는 출력스트림이다.
@@ -40,7 +41,7 @@ public class Application01 {
 
             int value;
 
-            while ((value = fin.read()) != -1) {
+            while ((value = fin.read()) != -1) {        // fin read 가 없으면 -1 이란 건가???
                 System.out.println(value);
 
                 System.out.println((char) value);
@@ -52,8 +53,6 @@ public class Application01 {
 
             // File 클래스의 length() 로 파일의 길이를 알 수 있다.
             System.out.println("파일의 길이 : " + new File("src/main/java/com/ohgiraffers/section02/stream/testInputStream.txt").length());
-
-
 
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);

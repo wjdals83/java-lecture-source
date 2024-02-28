@@ -33,7 +33,7 @@ public class Application01 {
         *      2. try-catch 로 처리
         * */
 
-        /* 목차. 1. trows 로 위임 */
+        /* 목차. 1. throws 로 위임 */
         ExceptionTest et = new ExceptionTest();
 
         /* 상품 가격은 10000원이고, 가진 돈은 50000원인 경우 */

@@ -17,7 +17,7 @@ public class Car {
 
     }
 
-    /* 시동이 걸린 상태인 경우 호출 시 ㅣ10km/g 씩 속도를 증가시킨다. */
+    /* 시동이 걸린 상태인 경우 호출 시 10km/h 씩 속도를 증가시킨다. */
     public void go() {
 
         if(isOn) {

@@ -7,7 +7,7 @@ import com.ohgiraffers.section02.userexception.exception.PriceNegativeException;
 public class ExceptionTest {
 
     public void checkEnoughMoney(int price, int money) throws PriceNegativeException, MoneyNegativeException, NotEnoughMoneyException {
-
+        // checkEnoughMoney 라는 throw 를 보낼 메소드 만들ㅇ므.
         if(price < 0) {
             throw new PriceNegativeException("상품의 가격은 음수일 수 없습니다.");        // Exception 말고 내가 임의로 정의한 클래스
         }

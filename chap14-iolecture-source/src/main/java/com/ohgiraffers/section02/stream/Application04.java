@@ -21,8 +21,26 @@ public class Application04 {
 
             fw.write(97);
 
+            fw.write("A");
+
+            fw.write(new char[] {'a', 'p', 'p', 'l', 'e'});
+
+            fw.write("하이미디어");
+
         } catch (IOException e) {
             throw new RuntimeException(e);
+        } finally {
+
+            if(fw != null) {
+
+                try {
+                    fw.close();
+                }  catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+
+            }
+
         }
 
 
